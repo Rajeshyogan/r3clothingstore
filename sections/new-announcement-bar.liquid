@@ -1,0 +1,30 @@
+
+<section>
+    <div>
+        {%- if  section.settings.show_announcement_bar -%}
+            <p>rajesh</p>
+        {%- endif -%}
+    </div>
+</section>
+{% schema %}
+  {
+    "name": "new announcement bar",
+    "tag": "section",
+    "class": "new-announcement-bar-section",
+    "settings": [
+      {
+        "type": "checkbox",
+        "id": "show_announcement_bar",
+        "label": "show announcement bar",
+        "default": true
+      },
+    ],
+    "presets": [
+      {
+        "name": "new announcement bar",
+        "settings": {
+        }
+      }
+    ]
+  }
+{% endschema %}

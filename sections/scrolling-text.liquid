@@ -1,0 +1,41 @@
+<div>
+    <h1>{{ section.settings.scrolling_text }}</h1>
+</div>
+{% schema %}
+  {
+    "name": "Scrolling Text banner",
+    "tag": "section",
+    "class": "rajesh-section",
+    "settings": [
+        {
+            "type": "text",
+            "id": "scrolling_text",
+            "label": "Scrolling Text",
+            "default": "This is a sample scrolling text. Replace it with your own text."
+        },
+        {
+            "type": "color",
+            "id": "text_color",
+            "label": "Text Color",
+            "default": "#000000"
+        },
+        {
+            "type": "color",
+            "id": "background_color",
+            "label": "Background Color",
+            "default": "#ffffff"
+        },
+        {
+            "type": "number",
+            "id": "scroll_speed",
+            "label": "Scroll Speed (in seconds)",
+            "default": 10,
+        }
+    ],
+    "presets": [
+      {
+        "name": "Scrolling Text banner",
+      }
+    ]
+  }
+{% endschema %}
